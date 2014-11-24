@@ -1,0 +1,11 @@
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\CalenderReminder.exe.config
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Properties.Resources.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.csproj.GenerateResource.Cache
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\CalenderReminder.exe
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\CalenderReminder.pdb
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.exe
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.pdb
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.CalendarControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.DayControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.csprojResolveAssemblyReference.cache
