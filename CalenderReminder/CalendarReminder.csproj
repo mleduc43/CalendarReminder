@@ -56,13 +56,14 @@
     <Compile Include="Calendar Controls\DayControl.Designer.cs">
       <DependentUpon>DayControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calendar.cs">
+    <Compile Include="CalendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calendar.Designer.cs">
-      <DependentUpon>Calendar.cs</DependentUpon>
+    <Compile Include="CalendarForm.Designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DayClass.cs" />
+    <Compile Include="EventClass.cs" />
     <Compile Include="MainProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDo List Controls\ToDoListControl.cs">
@@ -77,8 +78,8 @@
     <EmbeddedResource Include="Calendar Controls\DayControl.resx">
       <DependentUpon>DayControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calendar.resx">
-      <DependentUpon>Calendar.cs</DependentUpon>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

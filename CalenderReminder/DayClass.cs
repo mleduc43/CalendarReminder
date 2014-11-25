@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalenderReminder
 {
-    class DayClass
+    public class DayClass
     {
         public int Day { get; set; }
         public string Weekday { get; set; }

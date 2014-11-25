@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalenderReminder", "CalenderReminder\CalenderReminder.csproj", "{F1C00174-D110-402A-966C-754EC009EC87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarReminder", "CalenderReminder\CalendarReminder.csproj", "{F1C00174-D110-402A-966C-754EC009EC87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

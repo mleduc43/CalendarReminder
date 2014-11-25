@@ -1,6 +1,6 @@
 ﻿namespace CalenderReminder
 {
-    partial class Calendar
+    partial class CalendarForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.calendarControl1 = new CalenderReminder.Calendar_Controls.CalendarControl();
             this.bSwitchMode = new System.Windows.Forms.Button();
+            this.activePanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // calendarControl1
-            // 
-            this.calendarControl1.Location = new System.Drawing.Point(2, 42);
-            this.calendarControl1.Name = "calendarControl1";
-            this.calendarControl1.Size = new System.Drawing.Size(939, 721);
-            this.calendarControl1.TabIndex = 0;
             // 
             // bSwitchMode
             // 
@@ -47,15 +40,23 @@
             this.bSwitchMode.TabIndex = 1;
             this.bSwitchMode.Text = "Switch Mode";
             this.bSwitchMode.UseVisualStyleBackColor = true;
+            this.bSwitchMode.Click += new System.EventHandler(this.bSwitchMode_Click);
             // 
-            // Calendar
+            // activePanel
+            // 
+            this.activePanel.Location = new System.Drawing.Point(3, 51);
+            this.activePanel.Name = "activePanel";
+            this.activePanel.Size = new System.Drawing.Size(937, 757);
+            this.activePanel.TabIndex = 2;
+            // 
+            // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 809);
+            this.Controls.Add(this.activePanel);
             this.Controls.Add(this.bSwitchMode);
-            this.Controls.Add(this.calendarControl1);
-            this.Name = "Calendar";
+            this.Name = "CalendarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
             this.ResumeLayout(false);
@@ -64,8 +65,8 @@
 
         #endregion
 
-        private Calendar_Controls.CalendarControl calendarControl1;
         private System.Windows.Forms.Button bSwitchMode;
+        private System.Windows.Forms.Panel activePanel;
     }
 }
 

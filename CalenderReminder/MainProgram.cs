@@ -16,7 +16,7 @@ namespace CalenderReminder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Calendar());
+            Application.Run(new CalendarForm());
         }
     }
 }
