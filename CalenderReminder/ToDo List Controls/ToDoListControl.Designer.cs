@@ -46,7 +46,7 @@
             this.flowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel.Location = new System.Drawing.Point(41, 67);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(504, 513);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(727, 513);
             this.flowLayoutPanel.TabIndex = 1;
             // 
             // bAddNewItem
@@ -57,6 +57,7 @@
             this.bAddNewItem.TabIndex = 2;
             this.bAddNewItem.Text = "Add New";
             this.bAddNewItem.UseVisualStyleBackColor = true;
+            this.bAddNewItem.Click += new System.EventHandler(this.bAddNewItem_Click);
             // 
             // ToDoListControl
             // 

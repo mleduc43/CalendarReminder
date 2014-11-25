@@ -3,9 +3,11 @@ E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\CalenderReminder.pdb
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.CalendarControl.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.DayControl.resources
-E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.CalendarForm.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.Properties.Resources.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoListControl.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalendarReminder.csproj.GenerateResource.Cache
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.exe
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.pdb
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalendarReminder.csprojResolveAssemblyReference.cache
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.AddNewEventForm.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.MainForm.resources

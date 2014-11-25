@@ -1,6 +1,6 @@
 ﻿namespace CalenderReminder
 {
-    partial class CalendarForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.

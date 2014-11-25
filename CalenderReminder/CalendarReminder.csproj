@@ -56,15 +56,21 @@
     <Compile Include="Calendar Controls\DayControl.Designer.cs">
       <DependentUpon>DayControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalendarForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalendarForm.Designer.cs">
-      <DependentUpon>CalendarForm.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DayClass.cs" />
     <Compile Include="EventClass.cs" />
     <Compile Include="MainProgram.cs" />
+    <Compile Include="Forms\AddNewEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewEventForm.Designer.cs">
+      <DependentUpon>AddNewEventForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDo List Controls\ToDoListControl.cs">
       <SubType>UserControl</SubType>
@@ -72,14 +78,17 @@
     <Compile Include="ToDo List Controls\ToDoListControl.Designer.cs">
       <DependentUpon>ToDoListControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddNewEventForm.resx">
+      <DependentUpon>AddNewEventForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Calendar Controls\CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar Controls\DayControl.resx">
       <DependentUpon>DayControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalendarForm.resx">
-      <DependentUpon>CalendarForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,9 +115,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FileHelper\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

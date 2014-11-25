@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace CalenderReminder
 {
-    public partial class CalendarForm : Form
+    public partial class MainForm : Form
     {
         // Mode dictates if user is in ToDo List mode or Calender mode
         // false = calender, true = todo list
         private bool Mode = false;
-        public CalendarForm()
+        public MainForm()
         {
             DayClass _currentSelectedDay = new DayClass();
             InitializeComponent();

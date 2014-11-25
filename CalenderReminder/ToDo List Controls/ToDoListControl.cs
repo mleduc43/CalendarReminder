@@ -16,5 +16,11 @@ namespace CalenderReminder.ToDo_List_Controls
         {
             InitializeComponent();
         }
+
+        private void bAddNewItem_Click(object sender, EventArgs e)
+        {
+            AddNewEventForm newEventForm = new AddNewEventForm();
+            newEventForm.Show();
+        }
     }
 }
