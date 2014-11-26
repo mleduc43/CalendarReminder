@@ -22,7 +22,13 @@ namespace CalenderReminder.ToDo_List_Controls
         private void bAddNewItem_Click(object sender, EventArgs e)
         {
             AddNewEventForm newEventForm = new AddNewEventForm();
+            newEventForm.FormClosed += newEventForm_FormClosed;
             newEventForm.Show();
+        }
+
+        private void newEventForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            PopulateToDoItems();
         }
 
         private void PopulateToDoItems()

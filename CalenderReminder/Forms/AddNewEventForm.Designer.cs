@@ -90,7 +90,6 @@
             this.Name = "AddNewEventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNewEventForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddNewEventForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

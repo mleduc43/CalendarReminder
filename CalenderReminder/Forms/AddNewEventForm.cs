@@ -25,10 +25,5 @@ namespace CalenderReminder
             Globals.g_ToDoArrayList.Add(newItem);
             this.Close();
         }
-
-        private void AddNewEventForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
     }
 }
