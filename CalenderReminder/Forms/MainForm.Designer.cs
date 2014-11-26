@@ -49,16 +49,17 @@
             this.activePanel.Size = new System.Drawing.Size(937, 757);
             this.activePanel.TabIndex = 2;
             // 
-            // CalendarForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 809);
             this.Controls.Add(this.activePanel);
             this.Controls.Add(this.bSwitchMode);
-            this.Name = "CalendarForm";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing_1);
             this.ResumeLayout(false);
 
         }

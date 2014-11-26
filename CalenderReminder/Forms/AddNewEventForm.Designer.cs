@@ -31,11 +31,13 @@
             this.bAdd = new System.Windows.Forms.Button();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.lTitle = new System.Windows.Forms.Label();
+            this.lRecurrence = new System.Windows.Forms.Label();
+            this.txtRecurrence = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bAdd
             // 
-            this.bAdd.Location = new System.Drawing.Point(208, 422);
+            this.bAdd.Location = new System.Drawing.Point(209, 142);
             this.bAdd.Name = "bAdd";
             this.bAdd.Size = new System.Drawing.Size(133, 23);
             this.bAdd.TabIndex = 0;
@@ -59,11 +61,29 @@
             this.lTitle.TabIndex = 2;
             this.lTitle.Text = "Title:";
             // 
+            // lRecurrence
+            // 
+            this.lRecurrence.AutoSize = true;
+            this.lRecurrence.Location = new System.Drawing.Point(16, 38);
+            this.lRecurrence.Name = "lRecurrence";
+            this.lRecurrence.Size = new System.Drawing.Size(66, 13);
+            this.lRecurrence.TabIndex = 3;
+            this.lRecurrence.Text = "Recurrence:";
+            // 
+            // txtRecurrence
+            // 
+            this.txtRecurrence.Location = new System.Drawing.Point(89, 39);
+            this.txtRecurrence.Name = "txtRecurrence";
+            this.txtRecurrence.Size = new System.Drawing.Size(49, 20);
+            this.txtRecurrence.TabIndex = 4;
+            // 
             // AddNewEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 457);
+            this.ClientSize = new System.Drawing.Size(551, 177);
+            this.Controls.Add(this.txtRecurrence);
+            this.Controls.Add(this.lRecurrence);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.bAdd);
@@ -80,5 +100,7 @@
         private System.Windows.Forms.Button bAdd;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lTitle;
+        private System.Windows.Forms.Label lRecurrence;
+        private System.Windows.Forms.TextBox txtRecurrence;
     }
 }

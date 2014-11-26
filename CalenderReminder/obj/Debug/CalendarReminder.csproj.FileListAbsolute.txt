@@ -11,3 +11,4 @@ E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalendarReminder.csprojResolveAssemblyReference.cache
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.AddNewEventForm.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.MainForm.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoItemControl.resources

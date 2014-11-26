@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace CalenderReminder
 {
-    class EventClass
+    public class ToDoItem
     {
+        //Constructor for the ToDoItem, sets the default values in case the user forgets to set some.
+        public ToDoItem()
+        {
+            Title = "New To Do Task";
+            Recurrance = -1;
+            Category = "";
+            IsComplete = false;
+        }
+
         public string Title { get; set; }
         /// <summary>
         /// The recurrance of an event.
@@ -16,5 +25,7 @@ namespace CalenderReminder
         /// If it is > 0, there is a fixed number of recurrence
         /// </summary>
         public int Recurrance { get; set; }
+        public string Category { get; set; }
+        public bool IsComplete { get; set; }
     }
 }

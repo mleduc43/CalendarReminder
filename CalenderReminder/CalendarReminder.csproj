@@ -63,7 +63,8 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DayClass.cs" />
-    <Compile Include="EventClass.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="ToDoItem.cs" />
     <Compile Include="MainProgram.cs" />
     <Compile Include="Forms\AddNewEventForm.cs">
       <SubType>Form</SubType>
@@ -72,12 +73,19 @@
       <DependentUpon>AddNewEventForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToDo List Controls\ToDoItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToDo List Controls\ToDoItemControl.Designer.cs">
+      <DependentUpon>ToDoItemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ToDo List Controls\ToDoListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ToDo List Controls\ToDoListControl.Designer.cs">
       <DependentUpon>ToDoListControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="XMLHelper.cs" />
     <EmbeddedResource Include="Forms\AddNewEventForm.resx">
       <DependentUpon>AddNewEventForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +107,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ToDo List Controls\ToDoItemControl.resx">
+      <DependentUpon>ToDoItemControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ToDo List Controls\ToDoListControl.resx">
       <DependentUpon>ToDoListControl.cs</DependentUpon>
     </EmbeddedResource>

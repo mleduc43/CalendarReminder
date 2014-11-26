@@ -58,5 +58,12 @@ namespace CalenderReminder
                 Mode = false;
             }
         }
+
+        //On close, save to XML file
+        private void MainForm_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            if (Mode)
+                XMLHelper.WriteTo_ToDoXML();
+        }
     }
 }
