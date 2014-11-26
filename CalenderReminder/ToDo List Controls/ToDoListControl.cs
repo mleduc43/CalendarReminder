@@ -27,31 +27,14 @@ namespace CalenderReminder.ToDo_List_Controls
 
         private void PopulateToDoItems()
         {
-            #region Testing
-            List<ToDoItemControl> toDoItemControls = new List<ToDoItemControl>();
-            Globals.g_ToDoArrayList = new ArrayList();
-            ToDoItem a = new ToDoItem();
-            ToDoItem b = new ToDoItem();
-            ToDoItem c = new ToDoItem();
-            b.Title = "TEST2";
-            c.Title = "New 1 and testing";
-            Globals.g_ToDoArrayList.Add(a);
-            Globals.g_ToDoArrayList.Add(b);
-            Globals.g_ToDoArrayList.Add(c);
-            ToDoItemControl i = new ToDoItemControl(a);
-            ToDoItemControl o = new ToDoItemControl(b);
-            ToDoItemControl p = new ToDoItemControl(c);
-            ToDoItemControl l = new ToDoItemControl(a);
-            toDoItemControls.Add(i);
-            toDoItemControls.Add(o);
-            toDoItemControls.Add(p);
-            toDoItemControls.Add(l);
-            #endregion
+            //Get list of all todo items to convert to controls
+            ToDoItem[] toDoItems = (ToDoItem[])Globals.g_ToDoArrayList.ToArray(typeof(ToDoItem));
 
-            //Add to do item controls to the flow layout panel
-            foreach (ToDoItemControl tdi in toDoItemControls)
+            //Convert todo items to todo controls and add them to the flow panel 
+            for (int i = 0; i < toDoItems.Length; i++)
             {
-                flowLayoutPanel.Controls.Add(tdi);
+                ToDoItemControl t = new ToDoItemControl(toDoItems[i]);
+                flowLayoutPanel.Controls.Add(t);
             }
         }
     }

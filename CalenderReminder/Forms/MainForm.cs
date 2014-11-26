@@ -19,8 +19,9 @@ namespace CalenderReminder
         private bool Mode = false;
         public MainForm()
         {
-            DayClass _currentSelectedDay = new DayClass();
             InitializeComponent();
+            DayClass _currentSelectedDay = new DayClass();
+            Globals.g_ToDoArrayList = new System.Collections.ArrayList();
             
             //Get current screen resolution and adjust size of window to fit in screen resolution
             Rectangle resolution = System.Windows.Forms.Screen.PrimaryScreen.Bounds;

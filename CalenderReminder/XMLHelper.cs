@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace CalenderReminder
     class XMLHelper
     {
         private static string toDoXMLFileName = "Test.xml";
+
         private static string GetUserDocumentsFolder()
         {
             Environment.SpecialFolder myDocs = Environment.SpecialFolder.MyDocuments;
@@ -38,7 +40,7 @@ namespace CalenderReminder
             {
                 toDoXElements.Add(
                     new XElement("Item" + i.ToString(), 
-                    new XElement("Title", toDoItems[i].Title.Replace(' ', '_').ToString()),
+                    new XElement("Title", toDoItems[i].Title.ToString()),
                     new XElement("IsComplete", toDoItems[i].IsComplete.ToString())
                     )
                 );

@@ -19,7 +19,16 @@ namespace CalenderReminder
 
         private void bAdd_Click(object sender, EventArgs e)
         {
+            ToDoItem newItem = new ToDoItem();
+            if (txtTitle.Text != String.Empty)
+                newItem.Title = txtTitle.Text;
+            Globals.g_ToDoArrayList.Add(newItem);
             this.Close();
+        }
+
+        private void AddNewEventForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }

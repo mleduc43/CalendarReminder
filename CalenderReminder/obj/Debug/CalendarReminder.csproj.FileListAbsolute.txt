@@ -12,3 +12,17 @@ E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.AddNewEventForm.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.MainForm.resources
 E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoItemControl.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\bin\Debug\CalenderReminder.exe.config
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.exe
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.pdb
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\bin\Debug\CalenderReminder.exe
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\bin\Debug\CalenderReminder.pdb
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalendarReminder.csprojResolveAssemblyReference.cache
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.AddNewEventForm.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.CalendarControl.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.Calendar_Controls.DayControl.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.MainForm.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.Properties.Resources.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoItemControl.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoListControl.resources
+C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalendarReminder.csproj.GenerateResource.Cache

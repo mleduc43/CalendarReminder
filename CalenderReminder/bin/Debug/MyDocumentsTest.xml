@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ToDoItems>
+  <Item0>
+    <Title>New To Do Task</Title>
+    <IsComplete>False</IsComplete>
+  </Item0>
+  <Item1>
+    <Title>TEST2</Title>
+    <IsComplete>False</IsComplete>
+  </Item1>
+  <Item2>
+    <Title>New 1 and testing</Title>
+    <IsComplete>False</IsComplete>
+  </Item2>
+</ToDoItems>
