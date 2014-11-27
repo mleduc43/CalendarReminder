@@ -12,6 +12,7 @@ namespace CalenderReminder.ToDo_List_Controls
 {
     public partial class ToDoItemControl : UserControl
     {
+        private ToDoItem _toDoItem;
         public ToDoItemControl()
         {
             InitializeComponent();
@@ -20,7 +21,26 @@ namespace CalenderReminder.ToDo_List_Controls
         public ToDoItemControl(ToDoItem item)
             : this()
         {
-            lToDoTitle.Text = item.Title;
+            _toDoItem = item;
+            lToDoTitle.Text = _toDoItem.Title;
+            if (_toDoItem.IsComplete)
+                bComplete.Text = "Return";
+            else
+                bComplete.Text = "Done";
+        }
+
+        private void bComplete_Click(object sender, EventArgs e)
+        {
+            if (!_toDoItem.IsComplete)
+            {
+                _toDoItem.IsComplete = true;
+                bComplete.Text = "Return";
+            }
+            else
+            {
+                _toDoItem.IsComplete = false;
+                bComplete.Text = "Done";
+            }
         }
     }
 }

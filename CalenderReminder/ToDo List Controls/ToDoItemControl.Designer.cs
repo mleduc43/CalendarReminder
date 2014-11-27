@@ -34,20 +34,21 @@
             // 
             // bComplete
             // 
-            this.bComplete.Location = new System.Drawing.Point(392, 3);
+            this.bComplete.Location = new System.Drawing.Point(378, 3);
             this.bComplete.Name = "bComplete";
-            this.bComplete.Size = new System.Drawing.Size(42, 23);
+            this.bComplete.Size = new System.Drawing.Size(56, 23);
             this.bComplete.TabIndex = 0;
             this.bComplete.Text = "Done";
             this.bComplete.UseVisualStyleBackColor = true;
+            this.bComplete.Click += new System.EventHandler(this.bComplete_Click);
             // 
             // lToDoTitle
             // 
             this.lToDoTitle.Location = new System.Drawing.Point(3, 3);
             this.lToDoTitle.Name = "lToDoTitle";
-            this.lToDoTitle.Size = new System.Drawing.Size(383, 23);
+            this.lToDoTitle.Size = new System.Drawing.Size(369, 23);
             this.lToDoTitle.TabIndex = 1;
-            this.lToDoTitle.Text = "label1";
+            this.lToDoTitle.Text = "Title";
             this.lToDoTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ToDoItemControl

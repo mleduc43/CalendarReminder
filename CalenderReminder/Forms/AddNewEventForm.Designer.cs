@@ -31,26 +31,26 @@
             this.bAdd = new System.Windows.Forms.Button();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.lTitle = new System.Windows.Forms.Label();
-            this.lRecurrence = new System.Windows.Forms.Label();
-            this.txtRecurrence = new System.Windows.Forms.TextBox();
+            this.lCategory = new System.Windows.Forms.Label();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bAdd
             // 
-            this.bAdd.Location = new System.Drawing.Point(209, 142);
+            this.bAdd.Location = new System.Drawing.Point(200, 245);
             this.bAdd.Name = "bAdd";
             this.bAdd.Size = new System.Drawing.Size(133, 23);
-            this.bAdd.TabIndex = 0;
+            this.bAdd.TabIndex = 2;
             this.bAdd.Text = "Add New Event";
             this.bAdd.UseVisualStyleBackColor = true;
             this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(49, 12);
+            this.txtTitle.Location = new System.Drawing.Point(89, 9);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(490, 20);
-            this.txtTitle.TabIndex = 1;
+            this.txtTitle.Size = new System.Drawing.Size(450, 20);
+            this.txtTitle.TabIndex = 0;
             // 
             // lTitle
             // 
@@ -61,29 +61,31 @@
             this.lTitle.TabIndex = 2;
             this.lTitle.Text = "Title:";
             // 
-            // lRecurrence
+            // lCategory
             // 
-            this.lRecurrence.AutoSize = true;
-            this.lRecurrence.Location = new System.Drawing.Point(16, 38);
-            this.lRecurrence.Name = "lRecurrence";
-            this.lRecurrence.Size = new System.Drawing.Size(66, 13);
-            this.lRecurrence.TabIndex = 3;
-            this.lRecurrence.Text = "Recurrence:";
+            this.lCategory.AutoSize = true;
+            this.lCategory.Location = new System.Drawing.Point(13, 38);
+            this.lCategory.Name = "lCategory";
+            this.lCategory.Size = new System.Drawing.Size(52, 13);
+            this.lCategory.TabIndex = 5;
+            this.lCategory.Text = "Category:";
             // 
-            // txtRecurrence
+            // cbCategory
             // 
-            this.txtRecurrence.Location = new System.Drawing.Point(89, 39);
-            this.txtRecurrence.Name = "txtRecurrence";
-            this.txtRecurrence.Size = new System.Drawing.Size(49, 20);
-            this.txtRecurrence.TabIndex = 4;
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(89, 35);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(168, 21);
+            this.cbCategory.TabIndex = 1;
             // 
             // AddNewEventForm
             // 
+            this.AcceptButton = this.bAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 177);
-            this.Controls.Add(this.txtRecurrence);
-            this.Controls.Add(this.lRecurrence);
+            this.ClientSize = new System.Drawing.Size(551, 280);
+            this.Controls.Add(this.cbCategory);
+            this.Controls.Add(this.lCategory);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.bAdd);
@@ -100,7 +102,7 @@
         private System.Windows.Forms.Button bAdd;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lTitle;
-        private System.Windows.Forms.Label lRecurrence;
-        private System.Windows.Forms.TextBox txtRecurrence;
+        private System.Windows.Forms.Label lCategory;
+        private System.Windows.Forms.ComboBox cbCategory;
     }
 }

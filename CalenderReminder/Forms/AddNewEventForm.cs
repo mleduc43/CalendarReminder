@@ -15,6 +15,8 @@ namespace CalenderReminder
         public AddNewEventForm()
         {
             InitializeComponent();
+            //Find out how to populate CategoryList
+            cbCategory.DataSource = Globals.g_Categories;
         }
 
         private void bAdd_Click(object sender, EventArgs e)
@@ -22,6 +24,9 @@ namespace CalenderReminder
             ToDoItem newItem = new ToDoItem();
             if (txtTitle.Text != String.Empty)
                 newItem.Title = txtTitle.Text;
+            if (cbCategory.Text != String.Empty)
+                newItem.Category = cbCategory.Text;
+
             Globals.g_ToDoArrayList.Add(newItem);
             this.Close();
         }
