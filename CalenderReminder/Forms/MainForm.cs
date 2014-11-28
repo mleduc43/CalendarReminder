@@ -71,6 +71,7 @@ namespace CalenderReminder
         private void MainForm_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             XMLHelper.WriteTo_ToDoXML();
+            XMLHelper.WriteTo_SettingsXML();
         }
     }
 }

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="CategoriesContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CategoryEntities" EntityType="Model1.CategoryEntity" />
+    <EntitySet Name="ToDoItemEntities" EntityType="Model1.ToDoItemEntity" />
+    <AssociationSet Name="FK_ToDoItem_Categories" Association="Model1.FK_ToDoItem_Categories">
+      <End Role="CategoryEntity" EntitySet="CategoryEntities" />
+      <End Role="ToDoItemEntity" EntitySet="ToDoItemEntities" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CategoryEntity">
+    <Key>
+      <PropertyRef Name="category" />
+    </Key>
+    <Property Type="String" Name="category" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="created_on" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ToDoItems" Relationship="Model1.FK_ToDoItem_Categories" FromRole="CategoryEntity" ToRole="ToDoItemEntity" />
+  </EntityType>
+  <EntityType Name="ToDoItemEntity">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="category" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="IsComplete" Nullable="false" />
+    <Property Type="DateTime" Name="created_on" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="recurrence" Nullable="false" />
+    <NavigationProperty Name="Category1" Relationship="Model1.FK_ToDoItem_Categories" FromRole="ToDoItemEntity" ToRole="CategoryEntity" />
+  </EntityType>
+  <Association Name="FK_ToDoItem_Categories">
+    <End Type="Model1.CategoryEntity" Role="CategoryEntity" Multiplicity="0..1" />
+    <End Type="Model1.ToDoItemEntity" Role="ToDoItemEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryEntity">
+        <PropertyRef Name="category" />
+      </Principal>
+      <Dependent Role="ToDoItemEntity">
+        <PropertyRef Name="category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

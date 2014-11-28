@@ -26,3 +26,6 @@ C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\Cal
 C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoItemControl.resources
 C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalenderReminder.ToDo_List_Controls.ToDoListControl.resources
 C:\Users\mleduc\Documents\GitHub\CalendarReminder\CalenderReminder\obj\Debug\CalendarReminder.csproj.GenerateResource.Cache
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\CalendarReminderDB.sdf
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\EntityFramework.dll
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Debug\EntityFramework.xml

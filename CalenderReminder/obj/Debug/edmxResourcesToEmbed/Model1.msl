@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Model1" />
+  <Alias Key="Target" Value="Model1.Store" />
+  <EntityContainerMapping CdmEntityContainer="CategoriesContext" StorageEntityContainer="Model1StoreContainer">
+    <EntitySetMapping Name="CategoryEntities">
+      <EntityTypeMapping TypeName="Model1.CategoryEntity">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="created_on" ColumnName="created_on" />
+          <ScalarProperty Name="category" ColumnName="category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToDoItemEntities">
+      <EntityTypeMapping TypeName="Model1.ToDoItemEntity">
+        <MappingFragment StoreEntitySet="ToDoItem">
+          <ScalarProperty Name="recurrence" ColumnName="recurrence" />
+          <ScalarProperty Name="created_on" ColumnName="created_on" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
