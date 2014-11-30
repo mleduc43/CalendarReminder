@@ -8,6 +8,8 @@ namespace CalenderReminder
 {
     public class ToDoItem
     {
+        //MAY NO LONGER BE NEEDED, TO CONFIRM WITH NEW ENTITIES
+
         //Constructor for the ToDoItem, sets the default values in case the user forgets to set some.
         public ToDoItem()
         {

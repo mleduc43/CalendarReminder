@@ -25,7 +25,6 @@
     <Property Name="IsComplete" Type="tinyint" Nullable="false" />
     <Property Name="created_on" Type="datetime" Nullable="false" />
     <Property Name="recurrence" Type="int" Nullable="false" />
-    <Property Name="description" Type="nvarchar" MaxLength="1000" />
   </EntityType>
   <Association Name="FK_ToDoItem_Categories">
     <End Role="Categories" Type="Model1.Store.Categories" Multiplicity="0..1" />

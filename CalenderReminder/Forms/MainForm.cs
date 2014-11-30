@@ -23,11 +23,13 @@ namespace CalenderReminder
             DayClass _currentSelectedDay = new DayClass();
             //Initialize global variables
             Globals.g_ToDoArrayList = new System.Collections.ArrayList();
-            Globals.g_Categories = new List<string>();
+
+             
 
             //Populate Global ToDoItem List
-            XMLHelper.ReadFrom_ToDoXML();
-            XMLHelper.ReadFrom_SettingsXML();
+            DBHelper.PopulateToDoItems();
+            //XMLHelper.ReadFrom_ToDoXML();
+            //XMLHelper.ReadFrom_SettingsXML();
 
             //Get current screen resolution and adjust size of window to fit in screen resolution
             Rectangle resolution = System.Windows.Forms.Screen.PrimaryScreen.Bounds;
@@ -70,8 +72,8 @@ namespace CalenderReminder
         //TODO: Figure out how to only save if things have been changed
         private void MainForm_FormClosing_1(object sender, FormClosingEventArgs e)
         {
-            XMLHelper.WriteTo_ToDoXML();
-            XMLHelper.WriteTo_SettingsXML();
+            //XMLHelper.WriteTo_ToDoXML();
+            //XMLHelper.WriteTo_SettingsXML();
         }
     }
 }

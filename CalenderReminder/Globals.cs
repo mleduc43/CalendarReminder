@@ -13,6 +13,5 @@ namespace CalenderReminder
         //Very simple/not very efficient or safe
 
         public static ArrayList g_ToDoArrayList { get; set; }
-        public static List<string> g_Categories { get; set; }
     }
 }

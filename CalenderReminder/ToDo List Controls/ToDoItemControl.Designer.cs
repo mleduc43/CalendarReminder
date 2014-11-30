@@ -30,11 +30,13 @@
         {
             this.bComplete = new System.Windows.Forms.Button();
             this.lToDoTitle = new System.Windows.Forms.Label();
+            this.bExpandDescription = new System.Windows.Forms.Button();
+            this.lDescription = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bComplete
             // 
-            this.bComplete.Location = new System.Drawing.Point(378, 3);
+            this.bComplete.Location = new System.Drawing.Point(378, -1);
             this.bComplete.Name = "bComplete";
             this.bComplete.Size = new System.Drawing.Size(56, 23);
             this.bComplete.TabIndex = 0;
@@ -44,22 +46,45 @@
             // 
             // lToDoTitle
             // 
-            this.lToDoTitle.Location = new System.Drawing.Point(3, 3);
+            this.lToDoTitle.Location = new System.Drawing.Point(3, 0);
             this.lToDoTitle.Name = "lToDoTitle";
-            this.lToDoTitle.Size = new System.Drawing.Size(369, 23);
+            this.lToDoTitle.Size = new System.Drawing.Size(369, 15);
             this.lToDoTitle.TabIndex = 1;
             this.lToDoTitle.Text = "Title";
-            this.lToDoTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bExpandDescription
+            // 
+            this.bExpandDescription.Location = new System.Drawing.Point(4, 19);
+            this.bExpandDescription.Name = "bExpandDescription";
+            this.bExpandDescription.Size = new System.Drawing.Size(109, 23);
+            this.bExpandDescription.TabIndex = 2;
+            this.bExpandDescription.Text = "Expand Description";
+            this.bExpandDescription.UseVisualStyleBackColor = true;
+            this.bExpandDescription.Click += new System.EventHandler(this.bExpandDescription_Click);
+            // 
+            // lDescription
+            // 
+            this.lDescription.AutoSize = true;
+            this.lDescription.Location = new System.Drawing.Point(6, 49);
+            this.lDescription.Name = "lDescription";
+            this.lDescription.Size = new System.Drawing.Size(0, 13);
+            this.lDescription.TabIndex = 3;
+            this.lDescription.Visible = false;
             // 
             // ToDoItemControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.lDescription);
+            this.Controls.Add(this.bExpandDescription);
             this.Controls.Add(this.lToDoTitle);
             this.Controls.Add(this.bComplete);
             this.Name = "ToDoItemControl";
-            this.Size = new System.Drawing.Size(437, 32);
+            this.Size = new System.Drawing.Size(437, 62);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -67,5 +92,7 @@
 
         private System.Windows.Forms.Button bComplete;
         private System.Windows.Forms.Label lToDoTitle;
+        private System.Windows.Forms.Button bExpandDescription;
+        private System.Windows.Forms.Label lDescription;
     }
 }

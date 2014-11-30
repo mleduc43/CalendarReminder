@@ -13,10 +13,10 @@ namespace CalenderReminder
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CategoriesContext : DbContext
+    public partial class CalendarToDoContext : DbContext
     {
-        public CategoriesContext()
-            : base("name=CategoriesContext")
+        public CalendarToDoContext()
+            : base("name=CalendarToDoContext")
         {
         }
     

@@ -18,41 +18,58 @@ namespace CalenderReminder
             
             //Populate the list of available categories
             List<string> categoriesList = new List<string>();
-            using (var db = new CategoriesContext())
+            using (var db = new CalendarToDoContext())
             {
                 categoriesList = db.CategoryEntities.Select(a => a.category).ToList();
             }
             cbCategory.DataSource = categoriesList;
         }
-
-        //REWORK THIS TO WORK WITH NEW DB
+        
         private void bAdd_Click(object sender, EventArgs e)
         {
-            ToDoItem newItem = new ToDoItem();
-            if (txtTitle.Text != String.Empty)
-                newItem.Title = txtTitle.Text;
-
-            bool categoryAlreadyExists = false;
-            //Check to see if category is already in database
-            using (var db = new CategoriesContext())
+            if (!ValidateTextbox(txtTitle.Text))
             {
-                categoryAlreadyExists = db.CategoryEntities.Any(a => a.category == cbCategory.Text);
+                MessageBox.Show("Please enter a title that is not empty.");
+            }
+            else
+            {
+                ToDoItemEntity newItem = new ToDoItemEntity();
+                newItem.id = Guid.NewGuid();
+                newItem.title = txtTitle.Text;
+                newItem.category = cbCategory.Text;
+                newItem.description = txtDescription.Text;
+                newItem.created_on = DateTime.Now;
 
-                //If it does not exist, add it to database
-                if (!categoryAlreadyExists)
+                bool categoryAlreadyExists = false;
+                //Check to see if category is already in database
+                using (var db = new CalendarToDoContext())
                 {
-                    CategoryEntity ce = new CategoryEntity();
-                    ce.category = cbCategory.Text;
-                    ce.created_on = DateTime.Now;
-                    db.CategoryEntities.Add(ce);
+                    categoryAlreadyExists = db.CategoryEntities.Any(a => a.category == cbCategory.Text);
+
+                    //If category does not exist, add it to database
+                    if (!categoryAlreadyExists)
+                    {
+                        CategoryEntity ce = new CategoryEntity();
+                        ce.category = cbCategory.Text;
+                        ce.created_on = DateTime.Now;
+                        db.CategoryEntities.Add(ce);
+                    }
+
+                    db.ToDoItemEntities.Add(newItem);
                     db.SaveChanges();
                 }
+
+                DBHelper.PopulateToDoItems();
+                this.Close();
             }
+        }
 
-            if (cbCategory.Text != String.Empty)
-                newItem.Category = cbCategory.Text;
-
-            this.Close();
+        private bool ValidateTextbox(string text)
+        {
+            if (text.Trim() == string.Empty)
+                return false;
+            else
+                return true;
         }
     }
 }

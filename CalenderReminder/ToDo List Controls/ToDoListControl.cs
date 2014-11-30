@@ -13,14 +13,14 @@ namespace CalenderReminder.ToDo_List_Controls
 {
     public partial class ToDoListControl : UserControl
     {
-        private bool showCompleted;
+        private int showCompleted;
         public ToDoListControl()
         {
-            showCompleted = false;
+            showCompleted = 0;
             InitializeComponent();
             PopulateToDoItems(showCompleted);
         }
-
+        
         private void bAddNewItem_Click(object sender, EventArgs e)
         {
             AddNewEventForm newEventForm = new AddNewEventForm();
@@ -30,17 +30,19 @@ namespace CalenderReminder.ToDo_List_Controls
 
         private void newEventForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            PopulateToDoItems(showCompleted);
+            PopulateToDoItems(0);
         }
 
-        private void PopulateToDoItems(bool completed)
+        
+
+        private void PopulateToDoItems(int completed)
         {
             flowLayoutPanel.Controls.Clear();
 
             //Get list of all todo items to convert to controls
-            ToDoItem[] toDoItems = (ToDoItem[])Globals.g_ToDoArrayList.ToArray(typeof(ToDoItem));
+            ToDoItemEntity[] toDoItems = (ToDoItemEntity[])Globals.g_ToDoArrayList.ToArray(typeof(ToDoItemEntity));
 
-            //Convert todo items to todo controls and add them to the flow panel 
+            //Convert todo entities to todo controls and add them to the flow panel 
             for (int i = 0; i < toDoItems.Length; i++)
             {
                 if (toDoItems[i].IsComplete == completed)
@@ -53,17 +55,17 @@ namespace CalenderReminder.ToDo_List_Controls
 
         private void bViewCompleted_Click(object sender, EventArgs e)
         {
-            if (showCompleted)
+            if (showCompleted == 0)
             {
-                PopulateToDoItems(!showCompleted);
-                lTitle.Text = "To Do Tasks:";
-                showCompleted = false;
+                PopulateToDoItems(1);
+                lTitle.Text = "Completed Tasks:";
+                showCompleted = 1;
             }
             else
             {
-                PopulateToDoItems(!showCompleted);
-                lTitle.Text = "Completed Tasks:";
-                showCompleted = true;
+                PopulateToDoItems(0);
+                lTitle.Text = "To Do Tasks:";
+                showCompleted = 0;
             }
         }
     }

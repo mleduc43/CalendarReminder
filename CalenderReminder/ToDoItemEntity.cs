@@ -20,7 +20,8 @@ namespace CalenderReminder
         public byte IsComplete { get; set; }
         public System.DateTime created_on { get; set; }
         public int recurrence { get; set; }
+        public string description { get; set; }
     
-        public virtual CategoryEntity Category1 { get; set; }
+        public virtual CategoryEntity CategoryEntity { get; set; }
     }
 }

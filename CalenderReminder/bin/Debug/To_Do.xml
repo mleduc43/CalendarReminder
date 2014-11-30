@@ -1,15 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ToDoItems>
-  <ToDoItem>
-    <Title>First category</Title>
-    <IsComplete>False</IsComplete>
-    <Recurrance>-1</Recurrance>
-    <Category>Test1</Category>
-  </ToDoItem>
-  <ToDoItem>
-    <Title>Test</Title>
-    <IsComplete>False</IsComplete>
-    <Recurrance>-1</Recurrance>
-    <Category>test1</Category>
-  </ToDoItem>
-</ToDoItems>
+<ToDoItems />

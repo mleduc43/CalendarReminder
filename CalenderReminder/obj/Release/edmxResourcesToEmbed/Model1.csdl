@@ -27,7 +27,6 @@
     <Property Type="DateTime" Name="created_on" Nullable="false" Precision="3" />
     <Property Type="Int32" Name="recurrence" Nullable="false" />
     <NavigationProperty Name="CategoryEntity" Relationship="Model1.FK_ToDoItem_Categories" FromRole="ToDoItemEntity" ToRole="CategoryEntity" />
-    <Property Type="String" Name="description" MaxLength="1000" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK_ToDoItem_Categories">
     <End Type="Model1.CategoryEntity" Role="CategoryEntity" Multiplicity="0..1" />

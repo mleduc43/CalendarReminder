@@ -30,6 +30,7 @@
           <Property Name="IsComplete" Type="tinyint" Nullable="false" />
           <Property Name="created_on" Type="datetime" Nullable="false" />
           <Property Name="recurrence" Type="int" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="1000" />
         </EntityType>
         <Association Name="FK_ToDoItem_Categories">
           <End Role="Categories" Type="Model1.Store.Categories" Multiplicity="0..1" />
@@ -47,7 +48,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-        <EntityContainer Name="CategoriesContext" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CalendarToDoContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CategoryEntities" EntityType="Model1.CategoryEntity" />
           <EntitySet Name="ToDoItemEntities" EntityType="Model1.ToDoItemEntity" />
           <AssociationSet Name="FK_ToDoItem_Categories" Association="Model1.FK_ToDoItem_Categories">
@@ -69,11 +70,12 @@
           </Key>
           <Property Type="Guid" Name="id" Nullable="false" />
           <Property Type="String" Name="title" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="category" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="category" MaxLength="200" FixedLength="false" Unicode="true" Nullable="true" />
           <Property Type="Byte" Name="IsComplete" Nullable="false" />
           <Property Type="DateTime" Name="created_on" Nullable="false" Precision="3" />
           <Property Type="Int32" Name="recurrence" Nullable="false" />
-          <NavigationProperty Name="Category1" Relationship="Model1.FK_ToDoItem_Categories" FromRole="ToDoItemEntity" ToRole="CategoryEntity" />
+          <NavigationProperty Name="CategoryEntity" Relationship="Model1.FK_ToDoItem_Categories" FromRole="ToDoItemEntity" ToRole="CategoryEntity" />
+          <Property Type="String" Name="description" MaxLength="1000" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_ToDoItem_Categories">
           <End Type="Model1.CategoryEntity" Role="CategoryEntity" Multiplicity="0..1" />
@@ -94,7 +96,7 @@
       <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
         <Alias Key="Model" Value="Model1" />
         <Alias Key="Target" Value="Model1.Store" />
-        <EntityContainerMapping CdmEntityContainer="CategoriesContext" StorageEntityContainer="Model1StoreContainer">
+        <EntityContainerMapping CdmEntityContainer="CalendarToDoContext" StorageEntityContainer="Model1StoreContainer">
           <EntitySetMapping Name="CategoryEntities">
             <EntityTypeMapping TypeName="Model1.CategoryEntity">
               <MappingFragment StoreEntitySet="Categories">
@@ -106,6 +108,7 @@
           <EntitySetMapping Name="ToDoItemEntities">
             <EntityTypeMapping TypeName="Model1.ToDoItemEntity">
               <MappingFragment StoreEntitySet="ToDoItem">
+                <ScalarProperty Name="description" ColumnName="description" />
                 <ScalarProperty Name="recurrence" ColumnName="recurrence" />
                 <ScalarProperty Name="created_on" ColumnName="created_on" />
                 <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />

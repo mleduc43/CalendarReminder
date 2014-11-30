@@ -14,7 +14,6 @@
     <EntitySetMapping Name="ToDoItemEntities">
       <EntityTypeMapping TypeName="Model1.ToDoItemEntity">
         <MappingFragment StoreEntitySet="ToDoItem">
-          <ScalarProperty Name="description" ColumnName="description" />
           <ScalarProperty Name="recurrence" ColumnName="recurrence" />
           <ScalarProperty Name="created_on" ColumnName="created_on" />
           <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />

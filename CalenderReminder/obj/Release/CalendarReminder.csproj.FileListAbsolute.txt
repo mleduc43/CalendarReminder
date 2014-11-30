@@ -1,0 +1,16 @@
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\CalenderReminder.exe.config
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\CalendarReminderDB.sdf
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\CalenderReminder.exe
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\CalenderReminder.pdb
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\EntityFramework.dll
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\bin\Release\EntityFramework.xml
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.AddNewEventForm.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.Calendar_Controls.CalendarControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.Calendar_Controls.DayControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.MainForm.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.Properties.Resources.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.ToDo_List_Controls.ToDoItemControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.ToDo_List_Controls.ToDoListControl.resources
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalendarReminder.csproj.GenerateResource.Cache
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.exe
+E:\Documents\Documents\Visual Studio Projects\CalenderReminder\CalenderReminder\obj\Release\CalenderReminder.pdb

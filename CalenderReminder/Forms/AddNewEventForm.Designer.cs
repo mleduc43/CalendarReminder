@@ -33,6 +33,8 @@
             this.lTitle = new System.Windows.Forms.Label();
             this.lCategory = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.lDescription = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // bAdd
@@ -40,7 +42,7 @@
             this.bAdd.Location = new System.Drawing.Point(200, 245);
             this.bAdd.Name = "bAdd";
             this.bAdd.Size = new System.Drawing.Size(133, 23);
-            this.bAdd.TabIndex = 2;
+            this.bAdd.TabIndex = 3;
             this.bAdd.Text = "Add New Event";
             this.bAdd.UseVisualStyleBackColor = true;
             this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
@@ -78,12 +80,31 @@
             this.cbCategory.Size = new System.Drawing.Size(168, 21);
             this.cbCategory.TabIndex = 1;
             // 
+            // lDescription
+            // 
+            this.lDescription.AutoSize = true;
+            this.lDescription.Location = new System.Drawing.Point(12, 65);
+            this.lDescription.Name = "lDescription";
+            this.lDescription.Size = new System.Drawing.Size(63, 13);
+            this.lDescription.TabIndex = 6;
+            this.lDescription.Text = "Description:";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(89, 62);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(450, 75);
+            this.txtDescription.TabIndex = 2;
+            this.txtDescription.Text = "";
+            // 
             // AddNewEventForm
             // 
             this.AcceptButton = this.bAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 280);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.lDescription);
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.lCategory);
             this.Controls.Add(this.lTitle);
@@ -104,5 +125,7 @@
         private System.Windows.Forms.Label lTitle;
         private System.Windows.Forms.Label lCategory;
         private System.Windows.Forms.ComboBox cbCategory;
+        private System.Windows.Forms.Label lDescription;
+        private System.Windows.Forms.RichTextBox txtDescription;
     }
 }
