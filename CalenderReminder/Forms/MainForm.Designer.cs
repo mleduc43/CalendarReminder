@@ -30,6 +30,7 @@
         {
             this.bSwitchMode = new System.Windows.Forms.Button();
             this.activePanel = new System.Windows.Forms.Panel();
+            this.bOptions = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bSwitchMode
@@ -49,11 +50,22 @@
             this.activePanel.Size = new System.Drawing.Size(937, 757);
             this.activePanel.TabIndex = 2;
             // 
+            // bOptions
+            // 
+            this.bOptions.Location = new System.Drawing.Point(854, 12);
+            this.bOptions.Name = "bOptions";
+            this.bOptions.Size = new System.Drawing.Size(75, 23);
+            this.bOptions.TabIndex = 3;
+            this.bOptions.Text = "Options";
+            this.bOptions.UseVisualStyleBackColor = true;
+            this.bOptions.Click += new System.EventHandler(this.bOptions_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 809);
+            this.Controls.Add(this.bOptions);
             this.Controls.Add(this.activePanel);
             this.Controls.Add(this.bSwitchMode);
             this.Name = "MainForm";
@@ -68,6 +80,7 @@
 
         private System.Windows.Forms.Button bSwitchMode;
         private System.Windows.Forms.Panel activePanel;
+        private System.Windows.Forms.Button bOptions;
     }
 }
 

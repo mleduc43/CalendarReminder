@@ -11,7 +11,6 @@ namespace CalenderReminder
 {
     class XMLHelper
     {
-        private static string toDoXMLFileName = "To_Do.xml";
         private static string settingsXMLFileName = "settings.xml";
 
         /// <summary>

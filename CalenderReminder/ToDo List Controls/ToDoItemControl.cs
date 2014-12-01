@@ -57,7 +57,7 @@ namespace CalenderReminder.ToDo_List_Controls
             if (!lDescription.Visible)
             {
                 lDescription.Visible = true;
-                if (_toDoItem.description == string.Empty)
+                if (string.IsNullOrEmpty(_toDoItem.description))
                     lDescription.Text = "No description attached to To Do item";
                 else
                     lDescription.Text = _toDoItem.description;

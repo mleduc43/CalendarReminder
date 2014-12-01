@@ -75,5 +75,10 @@ namespace CalenderReminder
             //XMLHelper.WriteTo_ToDoXML();
             //XMLHelper.WriteTo_SettingsXML();
         }
+
+        private void bOptions_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
